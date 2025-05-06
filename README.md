@@ -1,4 +1,36 @@
 # Google Drive MCP Server
+This project provides a server-side implementation for Google Drive's Media Content Protocol (MCP). It enables the retrieval of media content from Google Drive files and serves them over HTTP.
+
+## 📝 Table of Contents
+
+- [Features](#-features)
+- [Test Cases](#-test-cases)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Google Cloud Configuration](#-google-cloud-configuration)
+- [Authentication](#-authentication)
+- [Usage](#-usage)
+- [Security](#-security)
+- [Troubleshooting](#-troubleshooting)
+- [Resources](#-resources)
+
+## ✨ Features
+
+- Retrieve media content from Google Drive files
+- Serve media over HTTP
+- OAuth2 authentication
+
+
+## 🧪 Test Cases
+
+### Successful Test Execution
+![Passed Tests](./public/images/passed_tests.png)
+
+### Failed Test Scenario 
+![Failed Tests](./public/images/failed_tests.png)
+
+### Test Coverage
+![Test Coverage](./public/images/test_coverage.png)
 
 ## 🔑 Prerequisites
 
