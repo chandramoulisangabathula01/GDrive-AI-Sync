@@ -10,8 +10,9 @@
 
 1. Clone repository:
 ```bash
-git clone https://github.com/felores/gdrive-mcp-server.git
-cd gdrive-mcp-server
+# git clone https://github.com/felores/gdrive-mcp-server.git
+git clone https://github.com/chandramoulisangabathula01/GDrive-AI-Sync.git
+cd GDrive-AI-Sync
 ```
 
 2. Install dependencies:

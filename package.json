@@ -1,0 +1,45 @@
+{
+  "name": "@modelcontextprotocol/server-gdrive",
+  "version": "0.6.2",
+  "description": "MCP server for interacting with Google Drive",
+  "license": "MIT",
+  "author": "Anthropic, PBC (https://anthropic.com)",
+  "homepage": "https://modelcontextprotocol.io",
+  "bugs": "https://github.com/modelcontextprotocol/servers/issues",
+  "type": "module",
+  "bin": {
+    "mcp-server-gdrive": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "start": "node --loader ts-node/esm index.ts",
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm --experimental-vm-modules ./index.ts",
+    "dev:npx": "npx ts-node ./index.ts"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "target": "ES2022"
+    }
+  }
+}
